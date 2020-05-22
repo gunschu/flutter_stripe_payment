@@ -1,4 +1,4 @@
-package com.facebook.react.bridge;
+package android.src.main.java.com.facebook.react.bridge;
 
 import android.app.Activity;
 import android.content.Context;
