@@ -1,4 +1,4 @@
-package com.facebook.react.bridge;
+package utils.facebook.react.bridge;
 
 import java.util.HashMap;
 import java.util.Map;

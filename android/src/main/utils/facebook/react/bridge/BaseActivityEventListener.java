@@ -1,4 +1,4 @@
-package com.facebook.react.bridge;
+package utils.facebook.react.bridge;
 
 public abstract class BaseActivityEventListener implements ActivityEventListener {
 

@@ -1,4 +1,4 @@
-package com.facebook.react.bridge;
+package utils.facebook.react.bridge;
 
 import android.app.Activity;
 import android.content.Intent;
