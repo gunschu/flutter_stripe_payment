@@ -1,13 +1,15 @@
 package de.jonasbark.stripepayment
 
-import com.facebook.react.bridge.Promise
-import com.facebook.react.bridge.ReadableMap
+import android.src.main.java.com.facebook.react.bridge.Promise
+import android.src.main.java.com.facebook.react.bridge.ReadableMap
 import com.gettipsi.stripe.StripeModule
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry.Registrar
+
+
 
 class StripePaymentPlugin(private val stripeModule: StripeModule) : MethodCallHandler {
 
