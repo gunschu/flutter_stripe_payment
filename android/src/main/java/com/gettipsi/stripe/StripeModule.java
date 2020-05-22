@@ -6,7 +6,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.src.main.java.com.facebook.react.bridge.*;
 import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
@@ -37,6 +36,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 import de.jonasbark.stripepayment.StripeDialog;
+import gunschu.BaseActivityEventListener;
+import gunschu.Promise;
+import gunschu.ReactContextBaseJavaModule;
+import gunschu.ReactMethod;
+import gunschu.ReadableMap;
 import io.flutter.plugin.common.PluginRegistry;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -68,7 +72,7 @@ import static com.stripe.android.model.StripeIntent.Status.RequiresCapture;
 import static com.stripe.android.model.StripeIntent.Status.RequiresConfirmation;
 import static com.stripe.android.model.StripeIntent.Status.Succeeded;
 
-public class StripeModule extends android.src.main.java.com.facebook.react.bridge.ReactContextBaseJavaModule {
+public class StripeModule extends ReactContextBaseJavaModule {
 
 
   private static final String MODULE_NAME = StripeModule.class.getSimpleName();

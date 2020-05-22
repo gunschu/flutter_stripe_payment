@@ -5,12 +5,12 @@ import android.text.TextUtils;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import android.src.main.java.com.facebook.react.bridge.Arguments;
-import android.src.main.java.com.facebook.react.bridge.ReadableArray;
-import android.src.main.java.com.facebook.react.bridge.ReadableMap;
-import android.src.main.java.com.facebook.react.bridge.WritableMap;
-import android.src.main.java.com.facebook.react.bridge.WritableNativeArray;
-import android.src.main.java.com.facebook.react.bridge.WritableNativeMap;
+import gunschu.Arguments;
+import gunschu.ReadableArray;
+import gunschu.ReadableMap;
+import gunschu.WritableMap;
+import gunschu.WritableNativeArray;
+import gunschu.WritableNativeMap;
 import com.google.android.gms.identity.intents.model.CountrySpecification;
 import com.google.android.gms.identity.intents.model.UserAddress;
 import com.google.android.gms.wallet.PaymentData;

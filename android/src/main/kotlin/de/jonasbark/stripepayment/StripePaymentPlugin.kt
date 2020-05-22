@@ -1,7 +1,7 @@
 package de.jonasbark.stripepayment
 
-import android.src.main.java.com.facebook.react.bridge.Promise
-import android.src.main.java.com.facebook.react.bridge.ReadableMap
+import gunschu.Promise
+import gunschu.ReadableMap
 import com.gettipsi.stripe.StripeModule
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
@@ -16,8 +16,8 @@ class StripePaymentPlugin(private val stripeModule: StripeModule) : MethodCallHa
     override fun onMethodCall(call: MethodCall, result: Result) {
         when (call.method) {
             "setOptions" -> stripeModule.init(
-                ReadableMap(call.argument("options")),
-                ReadableMap(call.argument("errorCodes"))
+                    ReadableMap(call.argument("options")),
+                    ReadableMap(call.argument("errorCodes"))
             )
             "setStripeAccount" -> stripeModule.setStripeAccount(
                 call.argument("stripeAccount")
@@ -25,44 +25,44 @@ class StripePaymentPlugin(private val stripeModule: StripeModule) : MethodCallHa
             "deviceSupportsAndroidPay" -> stripeModule.deviceSupportsAndroidPay(Promise(result));
             "canMakeAndroidPayPayments" -> stripeModule.canMakeAndroidPayPayments(Promise(result));
             "paymentRequestWithAndroidPay" -> stripeModule.paymentRequestWithAndroidPay(
-                ReadableMap(call.arguments as Map<String, Any>),
-                Promise(result)
+                    ReadableMap(call.arguments as Map<String, Any>),
+                    Promise(result)
             )
             "paymentRequestWithCardForm" -> stripeModule.paymentRequestWithCardForm(
-                ReadableMap(call.arguments as Map<String, Any>),
-                Promise(result)
+                    ReadableMap(call.arguments as Map<String, Any>),
+                    Promise(result)
             )
             "createTokenWithCard" -> stripeModule.createTokenWithCard(
-                ReadableMap(call.arguments as Map<String, Any>),
-                Promise(result)
+                    ReadableMap(call.arguments as Map<String, Any>),
+                    Promise(result)
             )
             "createTokenWithBankAccount" -> stripeModule.createTokenWithBankAccount(
-                ReadableMap(call.arguments as Map<String, Any>),
-                Promise(result)
+                    ReadableMap(call.arguments as Map<String, Any>),
+                    Promise(result)
             )
             "createSourceWithParams" -> stripeModule.createSourceWithParams(
-                ReadableMap(call.arguments as Map<String, Any>),
-                Promise(result)
+                    ReadableMap(call.arguments as Map<String, Any>),
+                    Promise(result)
             )
             "createPaymentMethod" -> stripeModule.createPaymentMethod(
-                ReadableMap(call.arguments as Map<String, Any>),
-                Promise(result)
+                    ReadableMap(call.arguments as Map<String, Any>),
+                    Promise(result)
             )
             "authenticatePaymentIntent" -> stripeModule.authenticatePaymentIntent(
-                ReadableMap(call.arguments as Map<String, Any>),
-                Promise(result)
+                    ReadableMap(call.arguments as Map<String, Any>),
+                    Promise(result)
             )
             "confirmPaymentIntent" -> stripeModule.confirmPaymentIntent(
-                ReadableMap(call.arguments as Map<String, Any>),
-                Promise(result)
+                    ReadableMap(call.arguments as Map<String, Any>),
+                    Promise(result)
             )
             "authenticateSetupIntent" -> stripeModule.authenticateSetupIntent(
-                ReadableMap(call.arguments as Map<String, Any>),
-                Promise(result)
+                    ReadableMap(call.arguments as Map<String, Any>),
+                    Promise(result)
             )
             "confirmSetupIntent" -> stripeModule.confirmSetupIntent(
-                ReadableMap(call.arguments as Map<String, Any>),
-                Promise(result)
+                    ReadableMap(call.arguments as Map<String, Any>),
+                    Promise(result)
             )
         }
     }

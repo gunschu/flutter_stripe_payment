@@ -1,4 +1,4 @@
-package android.src.main.java.com.facebook.react.bridge;
+package gunschu;
 
 import android.app.Activity;
 import android.content.Context;

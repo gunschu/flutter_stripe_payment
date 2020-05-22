@@ -1,6 +1,4 @@
-package android.src.main.java.com.facebook.react.bridge;
-
-import java.util.ArrayList;
+package gunschu;
 
 /**
  * Created by FFuF, Jonas Bark on 2019-10-02.

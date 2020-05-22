@@ -1,4 +1,4 @@
-package android.src.main.java.com.facebook.react.bridge;
+package gunschu;
 
 import io.flutter.plugin.common.MethodChannel;
 

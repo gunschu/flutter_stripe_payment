@@ -2,7 +2,7 @@ package com.gettipsi.stripe;
 
 import androidx.annotation.NonNull;
 
-import android.src.main.java.com.facebook.react.bridge.ReadableMap;
+import gunschu.ReadableMap;
 import com.gettipsi.stripe.util.ArgCheck;
 
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package android.src.main.java.com.facebook.react.bridge;
+package gunschu;
 
 public abstract class BaseActivityEventListener implements ActivityEventListener {
 

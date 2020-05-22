@@ -1,6 +1,5 @@
-package android.src.main.java.com.facebook.react.bridge;
+package gunschu;
 
-import java.util.HashMap;
 /**
  * Created by FFuF, Jonas Bark on 2019-10-02.
  */
